@@ -1,0 +1,32 @@
+[33mtag v3.1.1[m
+Tagger: Imran teli <hkhcoder@gmail.com>
+Date:   Thu Oct 24 08:41:41 2024 +0530
+
+release 3.1.1
+
+[33mcommit 3f908863b4e140ea49523162e69288be0fe96308[m[33m ([m[1;33mtag: [m[1;33mv3.1.1[m[33m)[m
+Author: Imran teli <hkhcoder@gmail.com>
+Date:   Thu Oct 24 08:41:26 2024 +0530
+
+    pipeline code java upgrade
+
+[1mdiff --git a/Jenkinsfile b/Jenkinsfile[m
+[1mindex be7508b..a63d9f7 100644[m
+[1m--- a/Jenkinsfile[m
+[1m+++ b/Jenkinsfile[m
+[36m@@ -1,11 +1,10 @@[m
+ pipeline {[m
+     [m
+ 	agent any[m
+[31m-/*	[m
+[31m-	tools {[m
+[31m-        maven "maven3"[m
+[31m-    }[m
+[31m-*/	[m
+[32m+[m[32mtools {[m
+[32m+[m	[32m    maven "MAVEN3"[m
+[32m+[m	[32m    jdk "JDK17"[m
+[32m+[m	[32m}[m
+     environment {[m
+         NEXUS_VERSION = "nexus3"[m
+         NEXUS_PROTOCOL = "http"[m
